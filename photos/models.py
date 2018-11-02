@@ -72,7 +72,7 @@ class Image (models.Model):
     @classmethod
     def searched(cls, query):
         result = cls.objects.filter(
-            description__icontains=query).order_by('-post_date')
+        description__icontains=query).order_by('-post_date')
         return result
    
    

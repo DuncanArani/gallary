@@ -12,6 +12,7 @@ global locations,categories
 locations=['NationalMusiuem','NationalMusiuem',
         'MtKenya','Mtkenya',
         'MombosaCity','MombosaCity']
+        
 categories=["Travel","Fashion","Workout"]
 
 
@@ -59,5 +60,6 @@ def category_results(request, cat):
    
     return render(request, 'index.html', {"photos": searched_images,"caption":caption,"locations":locations,"categories":categories})
            
+
            
 
