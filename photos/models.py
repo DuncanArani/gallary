@@ -89,6 +89,12 @@ class Image (models.Model):
         loc = cls.objects.filter(location=loc)
         return cls.objects.filter(location=loc)
 
+    @classmethod
+    def filter_by_Cotegory(cls, cat):
+        cat = cls.objects.filter(category=cat)
+        return cls.objects.filter(category=cat)
+
+
 
     @classmethod
     def search_by_Category(cls,search_term):
